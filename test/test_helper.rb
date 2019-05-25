@@ -4,4 +4,4 @@ $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require 'minitest/autorun'
 require 'test/unit'
 
-require_relative '../lib/checkout'
+require_relative '../lib/store'

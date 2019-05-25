@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Errors
+module Error
   module Repository
     # Error class for Repository models
     class AttributeError < StandardError

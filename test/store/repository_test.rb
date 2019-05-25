@@ -6,7 +6,7 @@ class User end
 
 class RepositoryTest < Minitest::Test
   def test_register
-    Repository.register :user, User.new
-    assert Repository.for(:user).is_a? User
+    Repository::Base.register User, User.new
+    assert Repository::Base.for(User).is_a? User
   end
 end
