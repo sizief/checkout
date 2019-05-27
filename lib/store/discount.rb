@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'discount/free'
+require_relative 'discount/percentage_for_more_than'
 
 module Discount
   # Calculate and create several types of discounts

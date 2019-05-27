@@ -7,8 +7,6 @@ require_relative 'store/repository'
 
 require_relative 'store/configuration'
 
-require_relative 'store/error/repository/attribute_error'
-
 module Store
   def self.configuration
     @configuration ||= Configuration.new

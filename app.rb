@@ -6,12 +6,11 @@ require_relative 'seed'
 # Setup products registery
 Store.configure do |config|
   config.products = './data/products.json'
-  config.products = './data/discounts.json'
+  config.discounts = './data/discounts.json'
 end
 
-p Store.configuration.products
 Seed.load
 
-p Repository::Base.for(Product).find(1)
-p Repository::Base.for(Product).find(2)
-p Repository::Base.for(Product).find(3)
+co = Checkout.new
+co.scan('VOUCHER')
+p co.basket

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Discount
-  class Free
+  class PercentageForMoreThan
     def initialize(args); end
   end
 end

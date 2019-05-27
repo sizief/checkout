@@ -12,7 +12,7 @@ end
 
 class ItemRepositoryTest < Minitest::Test
   def setup
-    # Register our model to Repository
+    # Register our class to Repository
     Repository::Base.register Customer
   end
 
@@ -28,8 +28,9 @@ class ItemRepositoryTest < Minitest::Test
     assert_equal Repository::Base.for(Customer).find_by(:name, 'Ali')
                                  .family, 'Deishidi'
     assert_nil Repository::Base.for(Customer).find_by(:name, 'Not found')
-    assert_raises do
-      Repository::Base.for(Customer).find_by(:not_found_attribue, '')
+
+    assert_raises ::Repository::Errors::AttributeNotFound do
+      assert Repository::Base.for(Customer).find_by(:not_found_attribue, '')
     end
   end
 
