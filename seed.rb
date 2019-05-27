@@ -26,10 +26,9 @@ class Seed
     discounts = JSON.parse(file)
 
     discounts['discounts'].each do |d|
-      discount = Discount.factory d['type'], to_hash(d)
-      Discount.save(d)
+      symbolized_key_hash = Hash[d.map { |k, v| [k.to_sym, v] }]
+      discount = Discount.factory d['type'], symbolized_key_hash
+      Discount.save(discount)
     end
   end
-
-  def self.to_hash(params); end
 end

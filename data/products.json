@@ -2,14 +2,14 @@
 	"products": [{
 		"code": "VOUCHER",
 		"name": "NoviCap Voucher",
-		"price": 5.00
+		"price": "5.00"
 	}, {
 		"code": "TSHIRT",
 		"name": "NoviCap T-Shirt",
-		"price": 20.00
+		"price": "20.00"
 	}, {
 		"code": "MUG",
 		"name": "NoviCap Coffee Mug",
-		"price": 7.50
+		"price": "7.50"
 	}]
 }

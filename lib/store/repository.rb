@@ -42,7 +42,7 @@ module Repository
 
     def self.for(klass)
       name = get_name klass
-      if @registery.nil? || @registery[name].nil?
+      if !defined?(@registery) || @registery.nil? || @registery[name].nil?
         raise Repository::Errors::NotRegistered, name
       end
 

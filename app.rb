@@ -13,4 +13,8 @@ Seed.load
 
 co = Checkout.new
 co.scan('VOUCHER')
-p co.basket
+co.scan('TSHIRT')
+co.scan('TSHIRT')
+co.scan('TSHIRT')
+co.scan('TSHIRT')
+p co.total #=> 81.0

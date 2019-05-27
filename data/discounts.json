@@ -2,12 +2,12 @@
 	"discounts": [{
 		"type": "free",
 		"target_item": "VOUCHER",
-		"extra_item": 1,
-                "threshold": 2
+		"extra_number": 1,
+                "threshold_number": 2
 	}, {
 		"type": "percentage_for_more_than",
 		"target_item": "TSHIRT",
-		"threshold": 3,
-		"percentage": 0.05
+		"threshold_number": 3,
+		"percentage": "0.05"
 	}]
 }
