@@ -11,15 +11,15 @@ require_relative 'discount/percentage_for_more_than'
 # this set of parameters:
 #
 #   - For initialize:
-#     discount specific parameters (:tagret_item for example)
-#   - To calculate discount, by calling `total` and with the following argument
+#     discount specific parameters (:target_item for example)
+#   - To calculate discount, by calling `total` and passing
 #     Array of hashes that represent list of products.
 #
 #     This hash should contains `code` and `price`.
 #
 #     For example:
 #
-#     [{code: 'VOUCHER', price: 10}, {code: 'MUG', price: 20}]
+#     [{code: 'VOUCHER', price: '10'}, {code: 'MUG', price: '20'}]
 #
 # This way Discount is not coupled to product model.
 ##
