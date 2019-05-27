@@ -3,7 +3,7 @@
 require_relative 'lib/store'
 require_relative 'seed'
 
-# Setup products registery
+# Setup product and discount list
 Store.configure do |config|
   config.products = './data/products.json'
   config.discounts = './data/discounts.json'
